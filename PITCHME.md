@@ -5,6 +5,7 @@
 +++
  
 ## Old way
++++
 ```
 Feature: Bulk Sales
 	Background:
@@ -16,16 +17,16 @@ Feature: Bulk Sales
 		Given I have a valid SKEY
 			And I request "/v2/csv_upload" using HTTP GET
 			And the response is success
-			And the response code is 200
-```
-+++
-```			
+			And the response code is 200			
 		When the request body is:
 				"""
 				{
 					"upload_csv": "invalid_file"
 				}
 				"""
+```
++++
+```
 			And I request "/v2/csv_upload" using HTTP POST
 		Then the response is success
 			And the response code is 200
