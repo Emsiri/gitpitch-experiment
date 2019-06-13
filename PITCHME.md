@@ -1,11 +1,11 @@
 ## Behat tests
-### Proposed changes for feature files
- - Old way is overly verbose
- - Steps can be redundant
- - Reads like a test
+### Proposed changes
 +++
- 
 ## Old way
+ -  (-)overly verbose
+ -  (-)Steps can be redundant
+ -  (-)Reads like a test
+ -  (+)No custom context file creation
 +++
 ```
 @JL-31763 @v2.9+
@@ -38,6 +38,11 @@ Then the response is success
 ```
 +++
 ## New way
+- (-)More work
+- (-)Steps can obfuscate the actions
+- (+)Easier to read
+- (+)Describes the functionality
+- (+)Makes it clearer what is being tested
 +++
 ```
 @JL-31761 @v2.9+
