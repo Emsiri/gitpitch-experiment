@@ -44,11 +44,11 @@ Then the response is success
 @snapend
 +++
 ## New way
-- (-)More work
-- (-)Steps can obfuscate the actions
-- (+)Easier to read
-- (+)Describes the functionality
-- (+)Makes it clearer what is being tested
+- @color[red](**-**)More work
+- @color[red](**-**)Steps can obfuscate the actions
+- @color[green](**+**)Easier to read
+- @color[green](**+**)Describes the functionality
+- @color[green](**+**)Makes it clearer what is being tested
 +++
 ```
 @JL-31761 @v2.9+
