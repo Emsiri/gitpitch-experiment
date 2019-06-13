@@ -1,7 +1,8 @@
-## * This is a test
-### This is a subtext
- - Point on why we should do things differently
- - Second point on why
+## Behat tests
+### Proposed changes for feature files
+ - Old way is overly verbose
+ - Steps can be redundant
+ - Reads like a test
 +++
  
 ## Old way
@@ -40,15 +41,15 @@ Then the response is success
 +++
 ```
 @JL-31761 @v2.9+
-    Scenario: Upload a valid CSV file with auth
-        Given I have a "valid csv" file
+Scenario: Upload a valid CSV file with auth
+	Given I have a "valid csv" file
         And I am an authenticated partner
         When I make the request
         Then I should see success messages
 ```
 +++
 ## Custom Context
-### This is a test
+### Step definitions (only 1 custom function)
 +++
 ```
 /**
