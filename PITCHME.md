@@ -17,6 +17,9 @@ Feature: Bulk Sales
 			And I request "/v2/csv_upload" using HTTP GET
 			And the response is success
 			And the response code is 200
+```
++++
+```			
 		When the request body is:
 				"""
 				{
