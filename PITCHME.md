@@ -58,9 +58,6 @@ Scenario: Upload a valid CSV file with auth
         When I make the request
         Then I should see success messages
 ```
-@snap[east span-20]
-Given I have a "valid csv" file
-@snapend
 +++
 ## Custom Context
 ### Step definitions
