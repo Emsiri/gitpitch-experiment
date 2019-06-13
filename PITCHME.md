@@ -2,10 +2,10 @@
 ### Proposed changes
 +++
 ## Old way
- -  (-)overly verbose
- -  (-)Steps can be redundant
- -  (-)Reads like a test
- -  (+)No custom context file creation
+ -  @color[red](**-**)overly verbose
+ -  @color[red](**-**)Steps can be redundant
+ -  @color[red](**-**)Reads like a test
+ -  @color[green](**+**)No custom context file creation
 +++
 ```
 @JL-31763 @v2.9+
