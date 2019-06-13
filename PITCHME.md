@@ -121,6 +121,5 @@ public function iShouldSeeSuccessMessages()
 ```
 +++
 ## Context inheritance
-+++
-![]contextinheritance.png
++++?image=contextinheritance.png
 
