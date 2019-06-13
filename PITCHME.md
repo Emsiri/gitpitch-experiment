@@ -1,9 +1,8 @@
-## * This is a test
+##  This is a test
 ### This is a subtext
  - Point on why we should do things differently
  - Second point on why
- 
- +++
++++
  
 ## Old way
 ```
