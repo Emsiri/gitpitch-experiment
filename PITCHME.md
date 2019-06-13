@@ -7,7 +7,6 @@
  -  (-)Reads like a test
  -  (+)No custom context file creation
 +++
-@snap[west span-80]
 ```
 @JL-31763 @v2.9+
 Scenario: Bulk purchase accepts valid file
@@ -22,12 +21,10 @@ Scenario: Bulk purchase accepts valid file
 			}
 			"""
 ```
-@snapend
 @snap[east span-20]
 ## Part 1
 @snapend
 +++
-Snap[west span-80]
 ```
 	And I request "/v2/csv_upload" using HTTP POST
 Then the response is success
@@ -42,7 +39,6 @@ Then the response is success
 		}
 		"""
 ```
-@snapend
 @snap[east span-20]
 ## Part 2
 @snapend
