@@ -85,3 +85,24 @@ public function iHaveAFile($file)
 }
 ```
 +++
+```
+/**
+ * @When I make the request
+ */
+public function iMakeTheRequest()
+{
+	$this->apiContext->requestPath('/file', 'POST');
+}
+```
++++
+```
+/**
+ * @Then I should see success messages
+ */
+public function iShouldSeeSuccessMessages()
+{
+	$api_response = $this->apiContext->getResponseBody();
+	$this->apiContext->assertResponseIs('success');
+}
+```
+
