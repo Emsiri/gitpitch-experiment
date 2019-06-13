@@ -2,10 +2,10 @@
 ### Proposed changes
 +++
 ## Old way
- -  @color[red](**-**)overly verbose :x:
- -  @color[red](**-**)Steps can be redundant :x:
- -  @color[red](**-**)Reads like a test :x:
- -  @color[green](**+**)No custom context file creation :heavy_check_mark:
+ -  @color[red](**-**)overly verbose
+ -  @color[red](**-**)Steps can be redundant
+ -  @color[red](**-**)Reads like a test
+ -  @color[green](**+**)No custom context file creation
 +++
 ```
 @JL-31763 @v2.9+
