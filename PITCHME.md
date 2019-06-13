@@ -49,7 +49,10 @@ Scenario: Upload a valid CSV file with auth
 ```
 +++
 ## Custom Context
-### Step definitions (only 1 custom function)
+### Step definitions
+- All but one function were reused from the apicontext file
+- One custom function that was copy/pasted then modified from the
+imbo/behat-api context
 +++
 ```
 /**
