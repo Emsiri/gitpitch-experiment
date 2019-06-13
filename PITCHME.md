@@ -119,4 +119,8 @@ public function iShouldSeeSuccessMessages()
 	$this->apiContext->assertResponseIs('success');
 }
 ```
++++
+## Context inheritance
++++
+![]contextinheritance.png
 
