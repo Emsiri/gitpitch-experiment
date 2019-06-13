@@ -5,7 +5,7 @@
  -  @color[red](**-**)overly verbose :x:
  -  @color[red](**-**)Steps can be redundant :x:
  -  @color[red](**-**)Reads like a test :x:
- -  @color[green](**+**)No custom context file creation :heavy_check_mark
+ -  @color[green](**+**)No custom context file creation :heavy_check_mark:
 +++
 ```
 @JL-31763 @v2.9+
