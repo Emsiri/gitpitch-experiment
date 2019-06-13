@@ -47,3 +47,41 @@ Then the response is success
         Then I should see success messages
 ```
 +++
+## Custom Context
+### This is a test
++++
+```
+/**
+ * @Given I am an authenticated partner
+ */
+public function iAmAnAuthenticatedPartner()
+{
+	$partnerArray = ["partner_id" => '1'];
+	$partnerJSON = json_encode($partnerArray);
+	$this->apiContext->setTestRequestFormParams($partnerJSON);
+}
+```
++++
+```
+/**
+ * @Given I have a :file file
+ */
+public function iHaveAFile($file)
+{
+	switch ($file) {
+		case "valid csv":
+			$this->apiContext->addMultipartFileToRequestCustomName('/opt/behat/project/_mocks/test.csv', 'file', $this->iHaveSetupTheTestFiles());
+			break;
+		case "invalid doc":
+			$this->apiContext->addMultipartFileToRequest('/opt/behat/project/_mocks/invalidDoc.doc', 'file');
+			break;
+		case "invalid missing headers csv":
+			$this->apiContext->addMultipartFileToRequestCustomName('/opt/behat/project/_mocks/invalid_missing_headers.csv', 'file', 'missing_headers_' . microtime(true) . '.csv');
+			break;
+		case "valid csv duplicate":
+			$this->apiContext->addMultipartFileToRequest('/opt/behat/project/_mocks/test.csv', 'file');
+			break;
+	}
+}
+```
++++
