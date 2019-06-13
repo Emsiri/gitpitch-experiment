@@ -9,7 +9,7 @@
 +++
 ```
 @JL-31763 @v2.9+
-Scenario: Bulk purchase reject invalid file
+Scenario: Bulk purchase accepts valid file
 	Given I have a valid SKEY
 		And I request "/v2/csv_upload" using HTTP GET
 		And the response is success
