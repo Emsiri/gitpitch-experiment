@@ -1,4 +1,4 @@
-##  This is a test
+## * This is a test
 ### This is a subtext
  - Point on why we should do things differently
  - Second point on why
@@ -7,11 +7,6 @@
 ## Old way
 +++
 ```
-Feature: Bulk Sales
-	Background:
-		Given I have access tp the upload portal
-			And I am an authenticated partner
-	
 	@JL-31763 @v2.9+
 	Scenario: Bulk purchase reject invalid file
 		Given I have a valid SKEY
@@ -39,7 +34,16 @@ Feature: Bulk Sales
 					}
 				}
 				"""
-		Then there should be an email sent
-			And there are form errors displayed
+```
++++
+## New way
++++
+```
+@JL-31761 @v2.9+
+    Scenario: Upload a valid CSV file with auth
+        Given I have a "valid csv" file
+        And I am an authenticated partner
+        When I make the request
+        Then I should see success messages
 ```
 +++
