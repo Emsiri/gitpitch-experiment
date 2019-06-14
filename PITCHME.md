@@ -54,9 +54,9 @@ Then the response is success
 @JL-31761 @v2.9+
 Scenario: Upload a valid CSV file with auth
 	Given I have a "valid csv" file
-        And I am an authenticated partner
-        When I make the request
-        Then I should see success messages
+	And I am an authenticated partner
+	When I send the "file" request
+	Then I should see success messages
 ```
 +++
 ## Custom Context
@@ -101,11 +101,11 @@ public function iHaveAFile($file)
 +++
 ```
 /**
- * @When I make the request
+ * @When I send/update the :path request
  */
-public function iMakeTheRequest()
+public function iSendTheRequest($path)
 {
-	$this->apiContext->requestPath('/file', 'POST');
+	$this->apiContext->requestPath("/$path", 'POST');
 }
 ```
 +++
