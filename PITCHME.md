@@ -2,10 +2,12 @@
 ### Proposed changes
 +++
 ## Current way
+@ul
  -  @color[red](**-**)overly verbose
  -  @color[red](**-**)Steps can be redundant
  -  @color[red](**-**)Reads like a test
  -  @color[green](**+**)No custom context file creation
+@ulend
 +++
 ```
 @JL-31763 @v2.9+
@@ -44,11 +46,13 @@ Then the response is success
 @snapend
 +++
 ## Proposed way
+@ul
 - @color[red](**-**)More work
 - @color[red](**-**)Steps can obfuscate the actions
 - @color[green](**+**)Easier to read
 - @color[green](**+**)Describes the functionality
 - @color[green](**+**)Makes it clearer what is being tested
+@ulend
 +++
 ```
 @JL-31761 @v2.9+
