@@ -115,9 +115,9 @@ public function iSendTheRequest($path)
  */
 public function iShouldSeeSuccessMessages()
 {
-	$api_response = $this->apiContext->getResponseBody();
 	$this->apiContext->assertResponseIs('success');
 }
+
 ```
 +++
 ## Context inheritance
