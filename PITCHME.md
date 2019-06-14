@@ -1,7 +1,7 @@
 ## Behat tests
 ### Proposed changes
 +++
-## Old way
+## Current way
  -  @color[red](**-**)overly verbose
  -  @color[red](**-**)Steps can be redundant
  -  @color[red](**-**)Reads like a test
@@ -43,7 +43,7 @@ Then the response is success
 ## Part 2
 @snapend
 +++
-## New way
+## Proposed way
 - @color[red](**-**)More work
 - @color[red](**-**)Steps can obfuscate the actions
 - @color[green](**+**)Easier to read
